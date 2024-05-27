@@ -1,5 +1,11 @@
 <div>
-  <p-menubar [model]="items"> </p-menubar>
+  <p-menubar [model]="items">
+    <ng-template pTemplate="end">
+        <div class="flex align-items-center" style="margin-right: 50px;">
+            <h4>EventBus Counter: {{ counter }}</h4>
+        </div>
+    </ng-template>
+  </p-menubar>
 </div>
 
 <router-outlet></router-outlet>
